@@ -1,0 +1,14 @@
+The logs indicate that multiple agents are encountering an error related to the OpenAI Python library. Specifically, the error message states that the use of `openai.ChatCompletion` is no longer supported in versions of the library greater than or equal to 1.0.0. 
+
+To resolve this issue, the following options are available:
+
+1. **Migrate the Codebase**: You can run the command `openai migrate` to automatically upgrade the codebase to utilize the new interface introduced in version 1.0.0.
+
+2. **Pin to an Older Version**: Alternatively, if upgrading is not feasible at this moment, you can pin the installation to an older version by running:
+   ```
+   pip install openai==0.28
+   ```
+
+3. **Refer to Migration Guide**: For detailed instructions on how to adapt the code for the new API, refer to the migration guide provided in the following link: [OpenAI Python Migration Guide](https://github.com/openai/openai-python/discussions/742).
+
+It is advisable to evaluate whether to migrate the codebase now or to delay until further updates are made to ensure compatibility with the new OpenAI framework.

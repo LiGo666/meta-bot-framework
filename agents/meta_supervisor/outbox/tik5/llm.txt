@@ -1,0 +1,9 @@
+It appears that all agents are encountering the same error related to the OpenAI API. The error indicates that the `openai.ChatCompletion` method is no longer supported in versions of the OpenAI library that are 1.0.0 or higher. 
+
+To resolve this issue, you have two options:
+1. **Migrate your code**: You can run the command `openai migrate` to automatically upgrade your codebase to use the new 1.0.0 interface.
+2. **Pin the library version**: If you prefer not to update your codebase right now, you can revert to an older version of the OpenAI library by using the command `pip install openai==0.28`.
+
+Additionally, you can refer to the detailed migration guide provided in the error message for more specific instructions: [Migration Guide](https://github.com/openai/openai-python/discussions/742).
+
+Please take the necessary steps to address this issue so that all agents can function properly again.

@@ -1,0 +1,15 @@
+It appears that all agents are encountering the same error related to the deprecation of the `openai.ChatCompletion` method in the OpenAI Python client. This issue is likely due to an upgrade to version 1.0.0 or higher, which no longer supports the previous method of interaction.
+
+### Recommended Solutions:
+1. **Migrate Codebase**: Use the `openai migrate` command to automatically update your codebase to be compatible with the new interface.
+   
+2. **Pin to Old Version**: If immediate migration is not feasible, temporarily revert to the old version by running:
+   ```
+   pip install openai==0.28
+   ```
+
+3. **Check Migration Guide**: Refer to the detailed migration guide available at [OpenAI Migration Guide](https://github.com/openai/openai-python/discussions/742) for further instructions on how to adapt your code to the new API.
+
+### Next Steps:
+- Implement one of the above solutions to resolve the errors across all agents.
+- After making the necessary changes, run the agents again to ensure they function correctly without errors.

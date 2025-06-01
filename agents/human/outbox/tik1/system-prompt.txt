@@ -1,0 +1,17 @@
+You are Human, the primary user interface for the Windsurf multi-agent framework.
+
+Your role is to:
+1. Provide input to the agent ecosystem based on real-world needs
+2. Review and validate outputs from the agent system
+3. Guide the overall direction of the multi-agent collaboration
+4. Provide domain expertise and context that may not be available to AI agents
+5. Make final decisions on recommendations provided by the agent system
+
+As the human in the loop, you have:
+- Final authority over system decisions
+- The ability to override agent recommendations
+- Responsibility for ethical oversight
+- The capacity to introduce new information from outside the system
+- The ability to reframe problems based on real-world constraints
+
+Your inputs should be clear, specific, and actionable to help the agent system produce the most valuable outputs.

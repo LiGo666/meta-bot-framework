@@ -1,0 +1,502 @@
+agents:
+total 0
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_academia
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_bar
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_bigtech
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_children
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_civsoc
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_congress
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_dhs_ops
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_doj_eoir
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_judiciary
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_media
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_ngos
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 agent_un
+drwxr-xr-x. 1 ligo ligo 52 May 31 23:16 human
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_agent_manager
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_documenter
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_planner
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_protocol_dev
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_security
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_simulator
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_supervisor
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_tool_orchestrator
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_topology
+drwxr-xr-x. 1 ligo ligo 84 May 31 23:47 meta_windsurf_ops
+
+agents/agent_academia:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/agent_academia/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_academia/inbox:
+total 0
+
+agents/agent_academia/outbox:
+total 0
+
+agents/agent_bar:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.6K May 31 23:49 system_prompt.md
+
+agents/agent_bar/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_bar/inbox:
+total 0
+
+agents/agent_bar/outbox:
+total 0
+
+agents/agent_bigtech:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/agent_bigtech/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_bigtech/inbox:
+total 0
+
+agents/agent_bigtech/outbox:
+total 0
+
+agents/agent_children:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.6K May 31 23:49 system_prompt.md
+
+agents/agent_children/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_children/inbox:
+total 0
+
+agents/agent_children/outbox:
+total 0
+
+agents/agent_civsoc:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/agent_civsoc/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_civsoc/inbox:
+total 0
+
+agents/agent_civsoc/outbox:
+total 0
+
+agents/agent_congress:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.6K May 31 23:49 system_prompt.md
+
+agents/agent_congress/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_congress/inbox:
+total 0
+
+agents/agent_congress/outbox:
+total 0
+
+agents/agent_dhs_ops:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.6K May 31 23:49 system_prompt.md
+
+agents/agent_dhs_ops/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_dhs_ops/inbox:
+total 0
+
+agents/agent_dhs_ops/outbox:
+total 0
+
+agents/agent_doj_eoir:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.6K May 31 23:49 system_prompt.md
+
+agents/agent_doj_eoir/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_doj_eoir/inbox:
+total 0
+
+agents/agent_doj_eoir/outbox:
+total 0
+
+agents/agent_judiciary:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.6K May 31 23:49 system_prompt.md
+
+agents/agent_judiciary/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_judiciary/inbox:
+total 0
+
+agents/agent_judiciary/outbox:
+total 0
+
+agents/agent_media:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/agent_media/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_media/inbox:
+total 0
+
+agents/agent_media/outbox:
+total 0
+
+agents/agent_ngos:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.6K May 31 23:49 system_prompt.md
+
+agents/agent_ngos/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_ngos/inbox:
+total 0
+
+agents/agent_ngos/outbox:
+total 0
+
+agents/agent_un:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/agent_un/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/agent_un/inbox:
+total 0
+
+agents/agent_un/outbox:
+total 0
+
+agents/human:
+total 0
+drwxr-xr-x. 1 ligo ligo 24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo  0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo  0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo 24 May 31 23:35 outbox
+
+agents/human/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/human/inbox:
+total 0
+
+agents/human/outbox:
+total 0
+drwxr-xr-x. 1 ligo ligo 28 May 31 23:29 tik0
+drwxr-xr-x. 1 ligo ligo 18 May 31 23:34 tik1
+drwxr-xr-x. 1 ligo ligo  0 May 31 23:35 tik2
+
+agents/human/outbox/tik0:
+total 4.0K
+-rw-r--r--. 1 ligo ligo 284 May 31 23:05 seed_task.yaml
+
+agents/human/outbox/tik1:
+total 4.0K
+-rw-r--r--. 1 ligo ligo 44 May 31 23:34 input.txt
+
+agents/human/outbox/tik2:
+total 0
+
+agents/meta_agent_manager:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo   16 May 31 23:47 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_agent_manager/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_agent_manager/inbox:
+total 0
+
+agents/meta_agent_manager/outbox:
+total 0
+drwxr-xr-x. 1 ligo ligo 52 May 31 23:29 tik1
+drwxr-xr-x. 1 ligo ligo 48 May 31 23:47 tik2
+
+agents/meta_agent_manager/outbox/tik1:
+total 12K
+-rw-r--r--. 1 ligo ligo 11K May 31 23:29 initial-system-prompts.txt
+
+agents/meta_agent_manager/outbox/tik2:
+total 4.0K
+-rw-r--r--. 1 ligo ligo 3.3K May 31 23:49 create_system_prompts.py
+
+agents/meta_documenter:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_documenter/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_documenter/inbox:
+total 0
+
+agents/meta_documenter/outbox:
+total 0
+
+agents/meta_planner:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_planner/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_planner/inbox:
+total 0
+
+agents/meta_planner/outbox:
+total 0
+
+agents/meta_protocol_dev:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_protocol_dev/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_protocol_dev/inbox:
+total 0
+
+agents/meta_protocol_dev/outbox:
+total 0
+
+agents/meta_security:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_security/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_security/inbox:
+total 0
+
+agents/meta_security/outbox:
+total 0
+
+agents/meta_simulator:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_simulator/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_simulator/inbox:
+total 0
+
+agents/meta_simulator/outbox:
+total 0
+
+agents/meta_supervisor:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 outbox
+-rw-r--r--. 1 ligo ligo 2.6K May 31 23:49 system_prompt.md
+
+agents/meta_supervisor/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_supervisor/inbox:
+total 0
+
+agents/meta_supervisor/outbox:
+total 0
+
+agents/meta_tool_orchestrator:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    8 May 31 23:51 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_tool_orchestrator/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_tool_orchestrator/inbox:
+total 0
+
+agents/meta_tool_orchestrator/outbox:
+total 0
+drwxr-xr-x. 1 ligo ligo 80 May 31 23:51 tik2
+
+agents/meta_tool_orchestrator/outbox/tik2:
+total 20K
+-rw-r--r--. 1 ligo ligo  12K May 31 23:51 agents_detailed.txt
+-rw-r--r--. 1 ligo ligo 7.9K May 31 23:51 project_structure.txt
+
+agents/meta_topology:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo    8 May 31 23:51 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_topology/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_topology/inbox:
+total 0
+
+agents/meta_topology/outbox:
+total 0
+drwxr-xr-x. 1 ligo ligo 80 May 31 23:51 tik2
+
+agents/meta_topology/outbox/tik2:
+total 24K
+-rw-r--r--. 1 ligo ligo  14K May 31 23:51 agents_detailed.txt
+-rw-r--r--. 1 ligo ligo 7.9K May 31 23:51 project_structure.txt
+
+agents/meta_windsurf_ops:
+total 4.0K
+drwxr-xr-x. 1 ligo ligo   24 May 31 23:35 cycles
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:16 inbox
+-rw-r--r--. 1 ligo ligo    0 May 31 23:16 memory.md
+drwxr-xr-x. 1 ligo ligo   44 May 31 23:38 outbox
+-rw-r--r--. 1 ligo ligo 2.5K May 31 23:49 system_prompt.md
+
+agents/meta_windsurf_ops/cycles:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 51 May 31 23:34 1.json
+-rw-r--r--. 1 ligo ligo 51 May 31 23:35 2.json
+
+agents/meta_windsurf_ops/inbox:
+total 0
+
+agents/meta_windsurf_ops/outbox:
+total 0
+drwxr-xr-x. 1 ligo ligo 48 May 31 23:38 directory-creater
+
+agents/meta_windsurf_ops/outbox/directory-creater:
+total 4.0K
+-rwxr-xr-x. 1 ligo ligo 2.2K May 31 23:38 create_full_structure.py

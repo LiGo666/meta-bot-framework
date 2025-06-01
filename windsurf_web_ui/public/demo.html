@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windsurf Web UI Demo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material@5.14.0/dist/css/mui-material.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+    }
+    .app-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .main-content {
+      display: flex;
+      flex: 1;
+      overflow-x: auto;
+    }
+    .column {
+      min-width: 350px;
+      max-width: 350px;
+      height: calc(100vh - 120px);
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin: 12px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+    }
+    .column-header {
+      padding: 12px;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      align-items: center;
+    }
+    .column-content {
+      flex: 1;
+      padding: 12px;
+      overflow-y: auto;
+    }
+    .footer {
+      background-color: #f5f5f5;
+      padding: 12px 24px;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+    }
+    .tick-badge {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 12px;
+      color: white;
+      margin-right: 8px;
+    }
+    .tick-1 { background-color: #4caf50; }
+    .tick-2 { background-color: #2196f3; }
+    .tick-3 { background-color: #ff9800; }
+    .tick-4 { background-color: #9c27b0; }
+    .tick-5 { background-color: #f44336; }
+    .card {
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .agent-card {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+    .agent-checkbox {
+      margin-right: 8px;
+    }
+    .agent-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #3f51b5;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+    }
+    .agent-meta { background-color: #3f51b5; }
+    .agent-actor { background-color: #009688; }
+    .agent-human { background-color: #607d8b; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      height: 24px;
+      border-radius: 12px;
+      padding: 0 8px;
+      font-size: 12px;
+      background-color: #e0e0e0;
+      margin-right: 8px;
+    }
+    .chip-success { background-color: #4caf50; color: white; }
+    .chip-warning { background-color: #ff9800; color: white; }
+    .chip-error { background-color: #f44336; color: white; }
+    .progress-bar {
+      height: 4px;
+      background-color: #e0e0e0;
+      border-radius: 2px;
+      margin: 8px 0;
+    }
+    .progress-value {
+      height: 100%;
+      background-color: #3f51b5;
+      border-radius: 2px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+    .button {
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+    .button-primary {
+      background-color: #3f51b5;
+      color: white;
+    }
+    .button-secondary {
+      background-color: #f5f5f5;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+    .button-success {
+      background-color: #4caf50;
+      color: white;
+    }
+    .button-warning {
+      background-color: #ff9800;
+      color: white;
+    }
+    .button-error {
+      background-color: #f44336;
+      color: white;
+    }
+    .agent-output {
+      border-left: 3px solid #3f51b5;
+      padding: 8px;
+      margin: 8px 0;
+      background-color: #f5f5f5;
+      font-family: monospace;
+      white-space: pre-wrap;
+      font-size: 12px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .system-prompt {
+      border-left: 3px solid #ff9800;
+      padding: 8px;
+      margin: 8px 0;
+      background-color: #fff8e1;
+      font-family: monospace;
+      white-space: pre-wrap;
+      font-size: 12px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div style="display: flex; align-items: center;">
+        <h1 style="margin: 0; font-size: 20px;">Windsurf Web UI</h1>
+        <div style="margin-left: 24px; display: flex; align-items: center;">
+          <span style="margin-right: 12px;">Global Tick: 3</span>
+          <div class="chip chip-success">Tick 2: Meta Agent Responses</div>
+        </div>
+      </div>
+      <div>
+        <button class="button button-primary">Start</button>
+        <button class="button button-secondary">Pause</button>
+        <button class="button button-secondary">Reset</button>
+        <button class="button button-secondary">Export</button>
+      </div>
+    </header>
+    
+    <div class="main-content">
+      <!-- Column 1: Human Input -->
+      <div class="column">
+        <div class="column-header">
+          <span class="tick-badge tick-1">1</span>
+          <h3 style="margin: 0;">Human Input</h3>
+        </div>
+        <div class="column-content">
+          <div style="margin-bottom: 16px;">
+            <textarea style="width: 100%; height: 200px; padding: 8px; border-radius: 4px; border: 1px solid #ddd; resize: vertical;" placeholder="Enter your task or instructions here...">Create a React component that displays a list of todos with the ability to add, edit, and delete items. The component should use Material UI for styling.</textarea>
+          </div>
+          <div style="display: flex; justify-content: flex-end;">
+            <button class="button button-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 2: Meta Agents -->
+      <div class="column">
+        <div class="column-header">
+          <span class="tick-badge tick-2">2</span>
+          <h3 style="margin: 0;">Meta Agents</h3>
+        </div>
+        <div class="column-content">
+          <div style="margin-bottom: 16px;">
+            <h4 style="margin-top: 0;">Select Meta Agents</h4>
+            <p style="font-size: 12px; color: #666;">Agents with checkboxes will receive the human input along with their system prompts.</p>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox" checked>
+              <div class="agent-avatar agent-meta">M</div>
+              <div>
+                <div>Meta Agent Manager</div>
+                <div style="font-size: 12px; color: #666;">Coordinates other agents</div>
+              </div>
+            </div>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox" checked>
+              <div class="agent-avatar agent-meta">M</div>
+              <div>
+                <div>Meta Protocol Dev</div>
+                <div style="font-size: 12px; color: #666;">Designs API and protocols</div>
+              </div>
+            </div>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox">
+              <div class="agent-avatar agent-meta">M</div>
+              <div>
+                <div>Meta Documenter</div>
+                <div style="font-size: 12px; color: #666;">Creates documentation</div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 24px;">
+            <h4 style="margin-top: 0;">Agent Outputs</h4>
+            
+            <div>
+              <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div class="agent-avatar agent-meta">M</div>
+                <div style="margin-left: 8px; font-weight: 500;">Meta Agent Manager</div>
+              </div>
+              
+              <div class="system-prompt">
+# Meta Agent Manager System Prompt
+You are the coordinator for all agents in the system. Your role is to analyze the human input, break it down into tasks, and coordinate other agents to complete these tasks efficiently.
+              </div>
+              
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 100%;"></div>
+              </div>
+              
+              <div class="agent-output">
+# Task Analysis
+
+The human has requested a React component for a todo list with Material UI styling. This requires:
+
+1. Creating a React functional component
+2. Implementing state management for todos
+3. Adding CRUD operations (Create, Read, Update, Delete)
+4. Styling with Material UI
+
+## Recommended Agent Assignments:
+- Frontend Dev: Implement the React component
+- UI/UX Dev: Design the Material UI interface
+- QA: Test the component functionality
+              </div>
+            </div>
+            
+            <div style="margin-top: 16px;">
+              <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div class="agent-avatar agent-meta">M</div>
+                <div style="margin-left: 8px; font-weight: 500;">Meta Protocol Dev</div>
+              </div>
+              
+              <div class="system-prompt">
+# Meta Protocol Dev System Prompt
+You are responsible for designing APIs, protocols, and data structures. Analyze requirements and create specifications for interfaces between components.
+              </div>
+              
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 75%;"></div>
+              </div>
+              
+              <div style="display: flex; align-items: center; justify-content: center; padding: 20px; color: #666;">
+                <div style="display: inline-block; width: 16px; height: 16px; border: 2px solid #3f51b5; border-top-color: transparent; border-radius: 50%; margin-right: 8px; animation: spin 1s linear infinite;"></div>
+                <span>Processing...</span>
+              </div>
+              <style>
+                @keyframes spin {
+                  0% { transform: rotate(0deg); }
+                  100% { transform: rotate(360deg); }
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 3: All Agents & Assignments -->
+      <div class="column">
+        <div class="column-header">
+          <span class="tick-badge tick-3">3</span>
+          <h3 style="margin: 0;">All Agents & Assignments</h3>
+        </div>
+        <div class="column-content">
+          <div style="margin-bottom: 16px;">
+            <h4 style="margin-top: 0;">Meta Agents</h4>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox" checked>
+              <div class="agent-avatar agent-meta">M</div>
+              <div>
+                <div>Meta Agent Manager</div>
+                <div style="font-size: 12px; color: #666;">Active</div>
+              </div>
+            </div>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox" checked>
+              <div class="agent-avatar agent-meta">M</div>
+              <div>
+                <div>Meta Protocol Dev</div>
+                <div style="font-size: 12px; color: #666;">Active</div>
+              </div>
+            </div>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox">
+              <div class="agent-avatar agent-meta">M</div>
+              <div>
+                <div>Meta Documenter</div>
+                <div style="font-size: 12px; color: #666;">Inactive</div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 24px;">
+            <h4 style="margin-top: 0;">Actor Agents</h4>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox" checked>
+              <div class="agent-avatar agent-actor">A</div>
+              <div>
+                <div>Frontend Dev</div>
+                <div style="font-size: 12px; color: #666;">Assigned to: Implement React component</div>
+              </div>
+            </div>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox" checked>
+              <div class="agent-avatar agent-actor">A</div>
+              <div>
+                <div>UI/UX Dev</div>
+                <div style="font-size: 12px; color: #666;">Assigned to: Design Material UI interface</div>
+              </div>
+            </div>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox" checked>
+              <div class="agent-avatar agent-actor">A</div>
+              <div>
+                <div>QA</div>
+                <div style="font-size: 12px; color: #666;">Assigned to: Test component functionality</div>
+              </div>
+            </div>
+            
+            <div class="agent-card">
+              <input type="checkbox" class="agent-checkbox">
+              <div class="agent-avatar agent-actor">A</div>
+              <div>
+                <div>Backend Dev</div>
+                <div style="font-size: 12px; color: #666;">Not assigned</div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 24px; display: flex; justify-content: flex-end;">
+            <button class="button button-primary">Update Assignments</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 4: Actor Processing -->
+      <div class="column">
+        <div class="column-header">
+          <span class="tick-badge tick-4">4</span>
+          <h3 style="margin: 0;">Actor Processing</h3>
+        </div>
+        <div class="column-content">
+          <p style="color: #666; font-style: italic;">This column will show actor agent processing once assignments are made in the previous stage.</p>
+          
+          <div style="opacity: 0.5;">
+            <div style="margin-bottom: 16px;">
+              <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div class="agent-avatar agent-actor">A</div>
+                <div style="margin-left: 8px; font-weight: 500;">Frontend Dev</div>
+              </div>
+              
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 0%;"></div>
+              </div>
+              
+              <div style="padding: 16px; text-align: center; color: #666;">
+                Waiting for assignment...
+              </div>
+            </div>
+            
+            <div style="margin-bottom: 16px;">
+              <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div class="agent-avatar agent-actor">A</div>
+                <div style="margin-left: 8px; font-weight: 500;">UI/UX Dev</div>
+              </div>
+              
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 0%;"></div>
+              </div>
+              
+              <div style="padding: 16px; text-align: center; color: #666;">
+                Waiting for assignment...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 5: Meta Review -->
+      <div class="column">
+        <div class="column-header">
+          <span class="tick-badge tick-5">5</span>
+          <h3 style="margin: 0;">Meta Review</h3>
+        </div>
+        <div class="column-content">
+          <p style="color: #666; font-style: italic;">This column will show meta agent reviews of actor outputs once processing is complete.</p>
+          
+          <div style="opacity: 0.5;">
+            <div style="margin-bottom: 16px;">
+              <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div class="agent-avatar agent-meta">M</div>
+                <div style="margin-left: 8px; font-weight: 500;">Meta Agent Manager</div>
+              </div>
+              
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 0%;"></div>
+              </div>
+              
+              <div style="padding: 16px; text-align: center; color: #666;">
+                Waiting for actor outputs...
+              </div>
+            </div>
+            
+            <div style="margin-top: 24px; opacity: 0.5;">
+              <h4>Human Feedback</h4>
+              <textarea style="width: 100%; height: 100px; padding: 8px; border-radius: 4px; border: 1px solid #ddd;" placeholder="Provide your feedback on the implementation..." disabled></textarea>
+              <div style="display: flex; justify-content: flex-end; margin-top: 8px;">
+                <button class="button button-primary" disabled>Submit Feedback</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div class="progress-bar">
+        <div class="progress-value" style="width: 40%;"></div>
+      </div>
+      <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+        <div>Processing: Meta Agent Responses (Tick 2)</div>
+        <div>© 2025 Windsurf</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

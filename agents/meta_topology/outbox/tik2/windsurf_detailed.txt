@@ -1,0 +1,27 @@
+windsurf:
+total 12K
+-rw-r--r--. 1 ligo ligo  124 May 31 23:35 global_state.json
+drwxr-xr-x. 1 ligo ligo    0 May 31 23:38 logs
+-rw-r--r--. 1 ligo ligo 3.1K May 31 23:32 next_tick.py
+drwxr-xr-x. 1 ligo ligo   90 May 31 23:16 protocols
+drwxr-xr-x. 1 ligo ligo   50 May 31 23:34 __pycache__
+-rw-r--r--. 1 ligo ligo  535 May 31 23:32 README.md
+drwxr-xr-x. 1 ligo ligo   26 May 31 23:17 tools
+
+windsurf/logs:
+total 0
+
+windsurf/protocols:
+total 16K
+-rw-r--r--. 1 ligo ligo  31 May 31 23:16 ACP.md
+-rw-r--r--. 1 ligo ligo 376 May 31 23:16 LLM_TIERS.md
+-rw-r--r--. 1 ligo ligo  31 May 31 23:16 MCP.md
+-rw-r--r--. 1 ligo ligo   2 May 31 23:16 next_assignments.json
+
+windsurf/__pycache__:
+total 8.0K
+-rw-r--r--. 1 ligo ligo 4.7K May 31 23:34 next_tick.cpython-313.pyc
+
+windsurf/tools:
+total 4.0K
+-rw-r--r--. 1 ligo ligo 607 May 31 23:17 size_guard.py

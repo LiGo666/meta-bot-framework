@@ -1,0 +1,39 @@
+# Kickoff Document for Project Windsurf
+
+## Overview
+This document serves as the kickoff for Project Windsurf, which aims to ensure that every unaccompanied child facing a U.S. immigration judge receives state-funded legal counsel. Our goal is to achieve a counsel rate of over 95% for these vulnerable children.
+
+## Objectives
+1. **Counsel Rate**: Ensure that more than 95% of unaccompanied children have access to legal representation.
+2. **Awareness**: Increase public awareness about the importance of legal counsel for unaccompanied minors.
+3. **Sustainability**: Establish a sustainable model for providing legal counsel to unaccompanied children.
+
+## Key Performance Indicators (KPIs)
+- **Policy Shift**: Measure changes in policy regarding unaccompanied children and legal representation.
+- **Representation Rate**: Track the percentage of unaccompanied children with legal counsel.
+- **Public Awareness**: Assess public knowledge and attitudes towards the legal representation of unaccompanied minors.
+- **Un-Endorsement**: Monitor any actions taken against practices that harm unaccompanied minors.
+- **Sustainability**: Evaluate the long-term viability of funding and resources for legal counsel.
+
+## Team Structure
+- **Meta Supervisor**: Enforces protocol adherence and oversees project compliance.
+- **Meta Planner**: Responsible for goal-setting and task allocation.
+- **Meta Tool Orchestrator**: Manages tool usage and budget.
+- **Meta Security**: Conducts PII and GDPR audits.
+- **Meta Agent Manager**: Handles the lifecycle of agents, including spawning and retiring.
+
+## Behavioral Guidelines
+1. Meet tick deadlines consistently.
+2. Tag every MCP with the correct LLM hint.
+3. Use the lowest-cost LLM tier that meets quality requirements.
+4. Handle PII securely to protect sensitive information.
+5. Escalate any conflicts to the meta supervisor.
+6. Comply with U.S. and EU laws, as well as OpenAI policy, avoiding hateful content.
+7. Maintain a pro-counsel stance while remaining politically neutral.
+
+## Next Steps
+1. Confirm team roles and responsibilities.
+2. Develop a detailed action plan based on the outlined objectives and KPIs.
+3. Set up communication channels for effective coordination among team members.
+
+This kickoff document will serve as a foundation for our work in Project Windsurf, guiding our actions and ensuring we stay aligned with our mission.

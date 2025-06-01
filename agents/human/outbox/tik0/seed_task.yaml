@@ -1,0 +1,9 @@
+- brief: "Prioritize immediate policy leverage points."
+  owner: meta_planner
+  dueTick: 3
+- brief: "Produce first public-facing narrative draft <1 500 chars>."
+  owner: agent_media
+  dueTick: 4
+- brief: "Generate list of potential pro-bono law firms."
+  owner: agent_bar
+  dueTick: 4

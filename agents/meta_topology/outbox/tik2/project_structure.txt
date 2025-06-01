@@ -1,0 +1,229 @@
+.
+├── agents
+│   ├── agent_academia
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_bar
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_bigtech
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_children
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_civsoc
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_congress
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_dhs_ops
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_doj_eoir
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_judiciary
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_media
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_ngos
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── agent_un
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── human
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   └── outbox
+│   │       ├── tik0
+│   │       ├── tik1
+│   │       └── tik2
+│   ├── meta_agent_manager
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   │   ├── tik1
+│   │   │   └── tik2
+│   │   └── system_prompt.md
+│   ├── meta_documenter
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── meta_planner
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── meta_protocol_dev
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── meta_security
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── meta_simulator
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── meta_supervisor
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   └── system_prompt.md
+│   ├── meta_tool_orchestrator
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   │   └── tik2
+│   │   └── system_prompt.md
+│   ├── meta_topology
+│   │   ├── cycles
+│   │   │   ├── 1.json
+│   │   │   └── 2.json
+│   │   ├── inbox
+│   │   ├── memory.md
+│   │   ├── outbox
+│   │   │   └── tik2
+│   │   └── system_prompt.md
+│   └── meta_windsurf_ops
+│       ├── cycles
+│       │   ├── 1.json
+│       │   └── 2.json
+│       ├── inbox
+│       ├── memory.md
+│       ├── outbox
+│       │   ├── directory-creater
+│       │   └── .keep
+│       └── system_prompt.md
+├── .env
+├── __pycache__
+│   ├── test_bootstrap.cpython-313-pytest-8.3.5.pyc
+│   └── test_next_tick.cpython-313-pytest-8.3.5.pyc
+├── .pytest_cache
+│   ├── CACHEDIR.TAG
+│   ├── .gitignore
+│   ├── README.md
+│   └── v
+│       └── cache
+│           ├── lastfailed
+│           ├── nodeids
+│           └── stepwise
+├── requirements.txt
+├── test_bootstrap.py
+├── test_next_tick.py
+├── windsurf
+│   ├── .env.example
+│   ├── global_state.json
+│   ├── logs
+│   ├── next_tick.py
+│   ├── protocols
+│   │   ├── ACP.md
+│   │   ├── LLM_TIERS.md
+│   │   ├── MCP.md
+│   │   └── next_assignments.json
+│   ├── __pycache__
+│   │   └── next_tick.cpython-313.pyc
+│   ├── README.md
+│   └── tools
+│       └── size_guard.py
+├── windsurf_bootstrap.py
+└── windsurf_runner.py
+
+111 directories, 116 files
